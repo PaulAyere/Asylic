@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+   
+}
+.menu{
+    
+    width: 100%;
+    min-height: 100vh;    
+    justify-content: center;
+    align-items: center;
+    background: url(1.jpg);
+    background-size: cover;
+    background-position: center;    
+}
+.menu-un{
+    background-color: #000;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+.menu-un .logo{
+    color: #fff;
+    font-size: 30px;
+}
+.menu-un .logo span{
+    color: #ff0000;
+}
+.menu-un ul{
+    list-style: none;
+    display: flex;
+}
+.menu-un ul li{
+    padding: 10px 30px ;
+    position: relative;
+}
+.menu-un ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+.menu-un ul li a:hover{
+    color: orange;
+}
+
+.dropdown{
+    display: none;
+}
+.menu .menu-un ul li:hover .dropdown{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #000;
+}
+.dropdown ul{
+    display: block;
+    margin: 10px;
+
+}
+.dropdown ul li{
+    width: 150px;
+    padding: 10px;
+}
+.fas{
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+}
+.footer{
+    background-color: #000;
+    padding: 70px 0;
+}
+.container{
+    max-width: 1170px;  
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style: none;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.container .footer-col h4{
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative; 
+}
+.container .footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.container .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: antiquewhite;
+    text-decoration: none;
+    font-weight: 300;
+    display: block ;
+}
+.container .footer-col ul li a:hover{
+    color: #ff0000;
+    padding-left: 10px;
+}
+
+.container .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #ff0000;
+    height: 2px;
+    box-sizing: border-box;
+    width: 70px;
+
+}
+ .container .footer-col .social-links a{
+    margin: 0 10px 10px 0;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    transition: all 0.5s ease;
+    background-color: rgba(255,255,255, 0.2)  
+     
+}
+.container .footer-col .social-links a:hover{
+    color: #0000ff;
+    background-color: #fff;
+}
+
